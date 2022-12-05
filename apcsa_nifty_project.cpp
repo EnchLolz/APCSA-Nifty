@@ -4,10 +4,12 @@ using namespace std;
 
 //constants
 #define INF 2e9
+#define INF2 4e18
 #define MOD 1e9+7
+#define MOD2 998244353
 
 //macros
-#define endl '\n'
+#define nl '\n'
 #define se second
 #define fi first
 #define pb push_back
