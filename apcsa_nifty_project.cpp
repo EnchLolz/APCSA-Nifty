@@ -265,8 +265,8 @@ int main() {
     str inputfile = "input.txt";
     str outputfile = "output.txt";
     //inputing the files
-	freopen(inputfile, "r", stdin);
-	freopen(outputfile, "w", stdout);
+    freopen(inputfile, "r", stdin);
+    freopen(outputfile, "w", stdout);
     //what type of graph is it?
     str type = "type";
     //graph object
