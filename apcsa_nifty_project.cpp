@@ -265,8 +265,8 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     //inputting the files
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
     //what type of graph is it?
     str type = "type";
     //graph object
