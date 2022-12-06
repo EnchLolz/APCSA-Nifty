@@ -23,8 +23,8 @@ typedef long long ll;
 struct node{
     str name;
     int type;
-    ll out = 0;
-    ll in = 0;
+    ll out;
+    ll in;
     ll level;
     vector<str> pointsto;
     vector<str> pointsfrom;
@@ -168,6 +168,7 @@ class Graph{
             cout << "    " << this->output[type][9];
             printlist(this->type3);
         }
+
     private:
         //important containers for output
         vector<str> topologicalOrder;
@@ -242,7 +243,7 @@ class Graph{
 //takes and interprets the input
 void input(Graph &graph){
     str s;
-    while(getline(cin,s)){
+    while(getline(cin,s,'\r')){
         //parent
         stringstream ss(s);
         str vertex;
@@ -254,21 +255,18 @@ void input(Graph &graph){
             getline(ss, substr, ',');
             graph.addEdge(vertex, substr);
         }
+        cin.ignore();
     }
     return;
 }
 
 //Asumes that the graph is a DAG and fully complete
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    //file names
-    str inputfile = "input.txt";
-    str outputfile = "output.txt";
     //inputing the files
-    freopen(inputfile, "r", stdin);
-    freopen(outputfile, "w", stdout);
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
     //what type of graph is it?
     str type = "type";
     //graph object
