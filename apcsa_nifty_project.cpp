@@ -264,16 +264,16 @@ void input(Graph &graph){
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    //inputing the files
+    //inputting the files
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
     //what type of graph is it?
     str type = "type";
     //graph object
     Graph graph(type);
-    //inputing the graph
+    //inputting the graph
     input(graph);
-    //outputing the answer
+    //outputting the answer
     graph.print();
     return 0;
 }
