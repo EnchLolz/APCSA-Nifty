@@ -1,7 +1,7 @@
 # APCSA NIFTY PROJECT #1
 ## Food Web Zombies
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
 This is my first extra credit submission for APCSA
 
